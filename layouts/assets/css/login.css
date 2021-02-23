@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*:focus{
+    outline: none;
+    overflow-x: hidden;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+nav{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    height: 7.5em;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+nav h1{
+    font-size: 3em;
+    color: #313131;
+}
+
+@media only screen and (max-width: 768px){
+    nav h1{
+        font-size: 1.75em;
+    }
+}
+
+.login-form{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form .form-section > h1{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    background-color: white;
+    padding: 5em;
+    border-radius: 1em;
+    border: thin solid rgba(0,0,0,0.15);
+    filter: drop-shadow(0 0 2em rgba(0,0,0,0.1));
+}
+
+@media only screen and (max-width: 768px){
+    .form-section{
+        font-size: 0.9em;
+        padding: 2.5em;
+    }
+}
+
+.form-section form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+form input[type=text]{
+    font-size: 1em;
+    height: 1em;
+    width: 15em;
+    padding: 1em 1.5em;
+    border-radius: 0.25em;
+    border: thin solid rgba(0,0,0,0.3);
+    transition: 0.3s ease-in-out;
+}
+
+form input[type=text]:focus{
+    border: thin solid black;
+}
+
+form input[type=submit]{
+    margin-top: 2.5em;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    padding: 0.5em;
+    width: 7.5em;
+    border: thin solid #313131;
+    background-color: #313131;
+    color: white;
+    font-weight: 600;
+    border-radius: 3em;
+    transition: 0.3s ease-in-out;
+}
+
+form input[type=submit]:hover{
+    background-color: white;
+    color: #313131;
+}
+

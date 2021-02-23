@@ -1,0 +1,6 @@
+{
+    "require": {
+        "php-http/discovery": "^1.12",
+        "mashape/unirest-php": "^3.0"
+    }
+}
